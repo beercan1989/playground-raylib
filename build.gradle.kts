@@ -16,6 +16,7 @@ java {
 
 android {
     compileSdk = 33
+    ndkVersion = "26.0.10792818"
     namespace = "uk.co.baconi.playground.raylib"
     defaultConfig {
         minSdk = 26
@@ -27,6 +28,9 @@ android {
                 arguments += listOf("-DPLATFORM=Android")
                 targets += listOf("playground_raylib")
             }
+        }
+        ndk {
+            abiFilters += listOf("x86", "x86_64", "arm64-v8a") // Excluding 'armeabi-v7a' as raylib 5.0 fails to compile
         }
     }
     externalNativeBuild {

@@ -36,7 +36,7 @@ Using CLion, create a new cmake profile named `Emscripten` using the same toolch
 -DCMAKE_TOOLCHAIN_FILE=${EMSDK_HOME}\upstream\emscripten\cmake\Modules\Platform\Emscripten.cmake
 -DPLATFORM=Web
 -DCMAKE_EXE_LINKER_FLAGS="-s USE_GLFW=3"
--DCMAKE_EXECUTABLE_SUFFIX=".html
+-DCMAKE_EXECUTABLE_SUFFIX=".html"
 ```
 
 ### Android
