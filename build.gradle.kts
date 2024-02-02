@@ -28,9 +28,6 @@ android {
                 targets += listOf("playground_raylib")
             }
         }
-        ndk {
-            abiFilters += listOf("x86", "x86_64")
-        }
     }
     externalNativeBuild {
         cmake {
